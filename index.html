@@ -1,0 +1,311 @@
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Streaming Max Cinema">
+  <title>Max Cinema</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <style>
+    .nav-link:hover,
+    .list-inline-item a:hover {
+      text-decoration: underline;
+    }
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.8);
+      transition: background-color 0.3s ease;
+      height: 10vh;
+    }
+
+    .navbar.scrolled {
+      background-color: rgba(0, 0, 0, 1);
+    }
+
+    .navbar-toggler-icon {
+      filter: invert(1) sepia(0) saturate(0) hue-rotate(0deg);
+    }
+
+    .carousel-item img {
+      object-fit: cover;
+      height: 70vh;
+      width: 100%;
+    }
+
+    header img {
+      width: 80px;
+    }
+
+    .card img {
+      height: 500px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .card {
+      margin: 20px;
+    }
+
+    #section5 {
+      color: #2a2a2a;
+    }
+
+    footer img {
+      width: 80px;
+    }
+  </style>
+</head>
+
+<body class="bg-dark text-light">
+
+  <!-- Header -->
+  <header class="bg-dark border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/film-play-svgrepo-com.svg" alt="Logo"
+            class="img-fluid logo-img"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link text-light" href="#section1">Bem-vindo</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#section2">Sobre a Max</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#section3">Lançamentos</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#section4">Escolha por gênero</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#section5">Cadastre-se</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="my-0">
+    <!-- Section 1: Carousel -->
+    <section id="section1">
+      <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div data-bs-interval="3000" class="carousel-item active">
+            <img class="d-block h-100" src="./img/filme-avengers.jpeg" alt="">
+          </div>
+          <div data-bs-interval="3000" class="carousel-item">
+            <img class="d-block h-100" src="./img/filme-elementos.jpg" alt="">
+          </div>
+          <div data-bs-interval="3000" class="carousel-item">
+            <img class="d-block h-100" src="./img/filme-hp.jpg" alt="">
+          </div>
+        </div>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button"
+          aria-label="Slide anterior">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button"
+          aria-label="Próximo slide">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"
+            aria-label="Ir para o slide 1"></button>
+          <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"
+            aria-label="Ir para o slide 2"></button>
+          <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"
+            aria-label="Ir para o slide 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Sobre -->
+    <section id="section2" class="container py-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Sobre a Max</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, esse. Sapiente ab ea quas minus ducimus,
+            obcaecati quos! Ea dignissimos qui tempore ut autem quod quas, officiis sunt cupiditate saepe.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="img/sobre-max.jpeg" class="img-fluid" alt="Imagem representando a empresa">
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Lançamentos -->
+    <section id="section3" class="py-10 text-center">
+      <div class="container">
+        <h2>Confira os lançamentos na Max</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolore soluta excepturi incidunt, autem
+          tempora nobis sequi! Sunt excepturi perferendis esse ex molestias voluptates, beatae at repellendus vel dolor
+          repellat?</p>
+        <div class="d-flex justify-content-between row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <article class="card">
+              <img src="./img/gucci-card.jpg" alt="">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">Assistir</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <article class="card">
+              <img src="./img/jw-card.jpg" alt="">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">Assistir</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <article class="card">
+              <img src="./img/cl-card.jpg" alt="">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">Assistir</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Gênero -->
+    <section id="section4" class="py-5">
+      <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <div class="container">
+          <h2>Escolha por Gênero</h2>
+          <div class="nav nav-pills">
+            <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Terror</button>
+            <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Comédia</button>
+            <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Ação</button>
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane active" id="aba1">
+              <div class="container">
+                <div class="d-flex justify-content-between row">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                      <img src="./img/jw-card.jpg" alt="">
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary">Assistir</a>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                      <img src="./img/gucci-card.jpg" alt="">
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary">Assistir</a>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                      <img src="./img/cl-card.jpg" alt="">
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary">Assistir</a>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="aba2">
+              <div class="container">
+                <div class="d-flex justify-content-between row">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                      <img src="./img/cl-card.jpg" alt="">
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary">Assistir</a>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                      <img src="./img/jw-card.jpg" alt="">
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary">Assistir</a>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                      <img src="./img/gucci-card.jpg" alt="">
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary">Assistir</a>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="aba3">
+              <div class="container">
+                <div class="d-flex justify-content-between row">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                      <img src="./img/gucci-card.jpg" alt="">
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary">Assistir</a>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                      <img src="./img/jw-card.jpg" alt="">
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary">Assistir</a>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                      <img src="./img/cl-card.jpg" alt="">
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary">Assistir</a>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Cadastro -->
+    <section id="section5" class="bg-light py-5 text-center">
+      <div class="container ">
+        <h2>Faça seu Cadastro na Max</h2>
+        <p>Cadastre-se e confira o melhor plano para você.</p>
+        <form class="row justify-content-center">
+          <div class="col-md-4 mb-3">
+            <input type="text" class="form-control" placeholder="Nome">
+          </div>
+          <div class="col-md-4 mb-3">
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="col-4">
+            <button type="submit" class="btn btn-dark w-100">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="bg-dark py-4 border-top">
+    <div class="container text-center">
+      <a class="navbar-brand" href="#"><img src="img/film-play-svgrepo-com.svg" alt="Logo"
+          class="img-fluid logo-img"></a>
+      <p class="mt-3">© 2024 Max. EBAC Módulo 13.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
